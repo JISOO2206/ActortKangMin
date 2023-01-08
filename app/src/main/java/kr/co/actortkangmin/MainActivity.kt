@@ -1,10 +1,12 @@
 package kr.co.actortkangmin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
 import android.widget.Toast.*
+import androidx.lifecycle.ViewModelProvider
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,9 +23,13 @@ class MainActivity : AppCompatActivity() {
 
         // 사진이 클릭되면 어떻게 동작할 것인가
         photo1.setOnClickListener {
-            Toast.makeText(this, "1번 사진 클릭", Toast.LENGTH_LONG).show()
+//            Toast.makeText(this, "1번 사진 클릭", Toast.LENGTH_LONG).show()
+            // 2. 화면이 클릭되면 다음 화면으로 넘어가서 사진을 크게 보여줌. (구글 검색어 : activity 화면 전환)
+            val intent = Intent(this, ActorPhotoActivity2::class.java)
+            startActivity(intent)
         }
-        // 2. 화면이 클릭되면 다음 화면으로 넘어가서 사진을 크게 보여줌.
+
+
 
         // 3.
     }
