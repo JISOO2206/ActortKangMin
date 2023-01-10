@@ -31,49 +31,58 @@ class MainActivity : AppCompatActivity() {
 
         // 사진이 클릭되면 어떻게 동작할 것인가
         photo1.setOnClickListener {
-//            Toast.makeText(this, "1번 사진 클릭", Toast.LENGTH_LONG).show()
             // 2. 화면이 클릭되면 다음 화면으로 넘어가서 사진을 크게 보여줌. (구글 검색어 : activity 화면 전환)
-            val intent = Intent(this, ActorPhotoActivity2::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            // 3. intent 데이터 전달
+            intent.putExtra("data", "1")
             startActivity(intent)
         }
 
         photo2.setOnClickListener {
-            val intent = Intent(this, ActorPhotoActivity3::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data", "2")
             startActivity(intent)
         }
 
         photo3.setOnClickListener {
-            val intent = Intent(this, ActorPhotoActivity4::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data", "3")
             startActivity(intent)
         }
 
         photo4.setOnClickListener {
-            val intent = Intent(this, ActorPhotoActivity5::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data", "4")
             startActivity(intent)
         }
 
         photo5.setOnClickListener {
-            val intent = Intent(this, ActorPhotoActivity6::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data", "5")
             startActivity(intent)
         }
 
         photo6.setOnClickListener {
-            val intent = Intent(this, ActorPhotoActivity7::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data", "6")
             startActivity(intent)
         }
 
         photo7.setOnClickListener {
-            val intent = Intent(this, ActorPhotoActivity8::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data", "7")
             startActivity(intent)
         }
 
         photo8.setOnClickListener {
-            val intent = Intent(this, ActorPhotoActivity9::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data", "8")
             startActivity(intent)
         }
 
         photo9.setOnClickListener {
-            val intent = Intent(this, ActorPhotoActivity10::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data", "9")
             startActivity(intent)
         }
 
